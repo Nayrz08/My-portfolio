@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:wght@400;700&family=Raleway:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #030303;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 180px;
+}
+
+.logo-img {
+    width: 40%;
+}
+
+.menu ul {
+    display: flex;
+}
+.menu li {
+    position: relative;
+}
+.menu li a {
+    margin: 20px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffff;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.menu li a:hover {
+    color: #0ba981;
+}
+
+.menu a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #0ba981;
+    left: 0;
+    bottom: -4px;
+    transition: ease .42s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.nayrz{
+    position: absolute;
+    right: 5px;
+    top: 40%;
+    width: 800px;
+    height: auto;
+    rotate: 90deg;
+}
+
+.main .text {
+    position: absolute;
+    top: 35%;
+    left: 12%;
+}
+
+.text h4 {
+    font-size: 60px;
+    color: #ffff;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.text h2 {
+    font-size: 140px;
+    color: #0ba981;
+    font-weight: 900;
+    text-transform: capitalize;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.text p {
+    color: #ffff;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.socmed {
+    background-color: #ffff;
+    border-radius: 10px;
+    width: 30px;
+    margin-right: 20px;
+    font-size: 25px;
+    transition: .6s;
+}
+
+.icon img:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    height: 100vh;
+}
